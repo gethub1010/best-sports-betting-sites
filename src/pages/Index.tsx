@@ -48,7 +48,7 @@ const Index = () => {
             ].map((book) => (
               <Card key={book.name} className="bg-white/5 border-0 p-6">
                 <h3 className="text-xl font-bold mb-2">{book.name}</h3>
-                <div className="flex items-center mb-3">
+                <div className="flex items-center mb-3 text-betting-gray">
                   <Star className="text-yellow-400 mr-1" size={16} />
                   <span>{book.rating}/5.0</span>
                 </div>
