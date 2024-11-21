@@ -83,7 +83,7 @@ const Index = () => {
               </li>
               <li className="flex items-start">
                 <Star className="text-betting-accent mr-2 mt-1 flex-shrink-0" size={20} />
-                <span>Zero Commission: Unlike traditional exchanges that charge up to 5%, BettorEdge charges zero commission</span>
+                <span>Zero Vig: Unlike a sportsbook that charges 5-10% per bet, BettorEdge lets you keep more of your winnings!</span>
               </li>
               <li className="flex items-start">
                 <Star className="text-betting-accent mr-2 mt-1 flex-shrink-0" size={20} />
