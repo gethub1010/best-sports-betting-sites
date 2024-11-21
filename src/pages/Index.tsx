@@ -41,7 +41,6 @@ const Index = () => {
           <h2 className="text-3xl font-bold mb-8">Top Rated Sports Betting Platforms</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
-              { name: "BetMGM", rating: "4.8", bonus: "$1,000" },
               { name: "BettorEdge", rating: "4.8", bonus: "$500", link: "https://share.mybe.app/id/appleappstore" },
               { name: "DraftKings", rating: "4.7", bonus: "$1,500" },
               { name: "FanDuel", rating: "4.9", bonus: "$2,000" }
