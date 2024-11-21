@@ -72,7 +72,7 @@ const Index = () => {
         <div className="grid md:grid-cols-3 gap-8 text-center">
           <div>
             <Shield className="mx-auto mb-4 text-betting-accent" size={32} />
-            <h3 className="text-xl font-bold mb-2">Licensed & Regulated</h3>
+            <h3 className="text-xl font-bold mb-2">Trusted & Loved</h3>
             <p className="text-betting-gray">Only trusted sportsbook partners</p>
           </div>
           <div>
