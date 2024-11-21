@@ -6,12 +6,15 @@ import { ArrowRight, Star, Shield, TrendingUp } from "lucide-react";
 const Index = () => {
   const { toast } = useToast();
 
-  const handleAffiliateClick = (bookmaker: string) => {
+  const handleAffiliateClick = (bookmaker: string, link?: string) => {
     console.log(`Affiliate click for ${bookmaker}`);
     toast({
       title: "Opening bookmaker site",
       description: `Redirecting you to ${bookmaker}...`,
     });
+    if (link) {
+      window.open(link, '_blank');
+    }
   };
 
   return (
@@ -41,6 +44,7 @@ const Index = () => {
               { name: "BetMGM", rating: "4.8", bonus: "$1,000" },
               { name: "DraftKings", rating: "4.7", bonus: "$1,500" },
               { name: "FanDuel", rating: "4.9", bonus: "$2,000" },
+              { name: "BettorEdge", rating: "4.8", bonus: "$500", link: "https://share.mybe.app/id/appleappstore" }
             ].map((book) => (
               <Card key={book.name} className="bg-white/5 border-0 p-6">
                 <h3 className="text-xl font-bold mb-2">{book.name}</h3>
@@ -49,11 +53,11 @@ const Index = () => {
                   <span>{book.rating}/5.0</span>
                 </div>
                 <p className="text-betting-accent font-bold mb-4">
-                  Up to {book.bonus} bonus
+                  Up to {book.bonus} {book.name === "BettorEdge" ? "in cash" : "bonus"}
                 </p>
                 <Button 
                   className="w-full bg-betting-accent hover:bg-betting-accent/90"
-                  onClick={() => handleAffiliateClick(book.name)}
+                  onClick={() => handleAffiliateClick(book.name, book.link)}
                 >
                   Claim Offer
                 </Button>
