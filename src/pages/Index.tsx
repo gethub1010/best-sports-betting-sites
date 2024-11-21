@@ -42,9 +42,9 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { name: "BetMGM", rating: "4.8", bonus: "$1,000" },
+              { name: "BettorEdge", rating: "4.8", bonus: "$500", link: "https://share.mybe.app/id/appleappstore" },
               { name: "DraftKings", rating: "4.7", bonus: "$1,500" },
-              { name: "FanDuel", rating: "4.9", bonus: "$2,000" },
-              { name: "BettorEdge", rating: "4.8", bonus: "$500", link: "https://share.mybe.app/id/appleappstore" }
+              { name: "FanDuel", rating: "4.9", bonus: "$2,000" }
             ].map((book) => (
               <Card key={book.name} className="bg-white/5 border-0 p-6">
                 <h3 className="text-xl font-bold mb-2">{book.name}</h3>
