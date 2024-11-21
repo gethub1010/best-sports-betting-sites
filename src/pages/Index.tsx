@@ -66,6 +66,40 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Betting Exchange Benefits */}
+      <section className="container mx-auto px-4 py-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-6">Why Choose a Betting Exchange?</h2>
+          <div className="bg-white/5 rounded-lg p-8">
+            <p className="text-betting-gray mb-6">
+              Traditional sportsbooks set their own odds and take the opposite side of your bets. 
+              Betting exchanges like BettorEdge revolutionize sports betting by connecting you directly 
+              with other bettors, offering several key advantages:
+            </p>
+            <ul className="space-y-4 text-betting-gray mb-8">
+              <li className="flex items-start">
+                <Star className="text-betting-accent mr-2 mt-1 flex-shrink-0" size={20} />
+                <span>Better Odds: Cut out the middleman and get more favorable odds directly from other bettors</span>
+              </li>
+              <li className="flex items-start">
+                <Star className="text-betting-accent mr-2 mt-1 flex-shrink-0" size={20} />
+                <span>Zero Commission: Unlike traditional exchanges that charge up to 5%, BettorEdge charges zero commission</span>
+              </li>
+              <li className="flex items-start">
+                <Star className="text-betting-accent mr-2 mt-1 flex-shrink-0" size={20} />
+                <span>Both Sides: Place bets or create your own markets by offering odds to other users</span>
+              </li>
+            </ul>
+            <Button 
+              className="w-full md:w-auto bg-betting-accent hover:bg-betting-accent/90 text-white"
+              onClick={() => handleAffiliateClick("BettorEdge", "https://share.mybe.app/id/appleappstore")}
+            >
+              Join BettorEdge Now <ArrowRight className="ml-2" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Trust Indicators */}
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-3 gap-8 text-center">
