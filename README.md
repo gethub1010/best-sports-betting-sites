@@ -3,7 +3,7 @@
 ## Project info
 Creating a sports betting site ethat sends you to some of the best betting sites available. Currently sends peopel to https://bettoredge.com Draftkings.com and Fanduel.com but can be adjusted to add other companies. 
 
-Will also look to add some of the best sports betting podcasts as well, like https://www.daveoharasports.com/
+Will also look to add some of the best sports betting podcasts as well, like the Iowa Hawkeyes or Circa Show at https://www.daveoharasports.com/
 
 **URL**: https://lovable.dev/projects/7336a086-0aeb-40f1-8490-503538e95eda
 
